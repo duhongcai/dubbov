@@ -12,6 +12,7 @@
         <module>../dubbovInterface</module>
         <module>../dubbovProvder</module>
         <module>../dubbovConsumer</module>
+        <module>../dubbovAdmin</module>
     </modules>
     <dependencies>
         <dependency>
