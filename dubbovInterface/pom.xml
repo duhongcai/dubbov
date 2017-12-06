@@ -9,8 +9,6 @@
         <relativePath>../dubbov/pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-
+    <packaging>jar</packaging>
     <artifactId>dubbovInterface</artifactId>
-
-
 </project>
