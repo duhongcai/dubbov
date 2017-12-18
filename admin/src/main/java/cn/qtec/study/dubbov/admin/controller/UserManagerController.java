@@ -7,10 +7,13 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpServletRequest;
 import java.io.UnsupportedEncodingException;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * Created by duhc on 2017/12/11.
@@ -27,10 +30,14 @@ public class UserManagerController {
         return "user/list";
     }
 
-    @RequestMapping(method = RequestMethod.POST)
-    public List<User> getUsers(){
+    @RequestMapping(value = "/getUser")
+    @ResponseBody
+    public Map<String, Object> getUsers() {
         List<User> allUser = userService.getAllUser();
-        return allUser;
+        Map<String, Object> map = new HashMap<String, Object>();
+        map.put("rows", allUser);
+        map.put("total", allUser.size());
+        return map;
     }
 
     @RequestMapping(value = "/register", method = RequestMethod.GET)

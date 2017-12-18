@@ -27,6 +27,7 @@
     <style type="text/css">
         .frameView{
             height: 970px;
+            width: 1000px;
             /*background-color: #9d9d9d;*/
             margin-left: 12.5%;
             margin-top: 100px;
@@ -103,7 +104,7 @@
     </footer>
 </div>
 <div class="frameView">
-    <iframe id="main-view" name="main-view" frameborder="0"  style="height: 900px;width: 500px">
+    <iframe id="main-view" name="main-view" frameborder="0"  style="height: 100%;width: 2000px">
     </iframe>
 </div>
 <!-- END WRAPPER -->
