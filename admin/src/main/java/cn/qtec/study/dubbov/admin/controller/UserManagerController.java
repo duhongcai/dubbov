@@ -21,11 +21,16 @@ public class UserManagerController {
 
     @Autowired
     UserService userService;
-    @RequestMapping
+
+    @RequestMapping(method = RequestMethod.GET)
     public String list(Model model) {
-        List<User> allUser = userService.getAllUser();
-        model.addAttribute("users",allUser);
         return "user/list";
+    }
+
+    @RequestMapping(method = RequestMethod.POST)
+    public List<User> getUsers(){
+        List<User> allUser = userService.getAllUser();
+        return allUser;
     }
 
     @RequestMapping(value = "/register", method = RequestMethod.GET)
