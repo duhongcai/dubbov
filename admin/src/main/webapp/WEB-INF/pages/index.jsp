@@ -81,7 +81,7 @@
                         <div id="subPages" class="collapse ">
                             <ul class="nav">
                                 <li><a href="user"  target="main-view">查看用户</a></li>
-                                <li><a href="/user/register" class="">增加用户</a></li>
+                                <li><a href="user/register" target="main-view">增加用户</a></li>
                             </ul>
                         </div>
                     </li>

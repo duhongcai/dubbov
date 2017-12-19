@@ -14,7 +14,7 @@ public class UserServiceImpl implements UserService {
     public List<User> getAllUser() {
         User user;
         List<User> users = new ArrayList<User>();
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 20; i++) {
             user = new User();
             user.setUserName("duhc"+i);
             user.setAge(10+i);

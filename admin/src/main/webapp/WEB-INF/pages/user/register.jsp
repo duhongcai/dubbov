@@ -11,6 +11,6 @@
     <title>Title</title>
 </head>
 <body>
-    用户注册
+    添加用户
 </body>
 </html>
