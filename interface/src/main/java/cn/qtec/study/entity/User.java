@@ -51,4 +51,15 @@ public class User implements Serializable {
     public void setSex(short sex) {
         this.sex = sex;
     }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "userId=" + userId +
+                ", userName='" + userName + '\'' +
+                ", password='" + password + '\'' +
+                ", age=" + age +
+                ", sex=" + sex +
+                '}';
+    }
 }

@@ -17,6 +17,11 @@
             <artifactId>dubbovInterface</artifactId>
             <version>${project.version}</version>
         </dependency>
+        <dependency>
+            <groupId>cn.qtec.study</groupId>
+            <artifactId>dubbovInterface</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
     </dependencies>
 
 </project>
