@@ -5,11 +5,11 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
     <dubbo:application name="demo-consumer"/>
     <!--
-    广播方式
+    广播方式-->
 <dubbo:registry address="multicast://224.5.6.7:1234"/>
--->
-    <dubbo:registry address="zookeeper://192.168.20.131:2181"/>
-    <dubbo:reference interface="cn.qtec.study.interfaces.UserService" id="userService" >
+
+    <!--<dubbo:registry address="zookeeper://192.168.20.131:2181" check="false"/>-->
+    <dubbo:reference interface="cn.qtec.study.interfaces.UserService" id="userService" check="false"  >
         <dubbo:method name="getAllUser"/>
     </dubbo:reference>
 </beans>
